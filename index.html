@@ -1,3 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake game</title>
+    <style>
+        body {
+            background: #B5E5CF;
+            text-align: center;
+        }
 
+        canvas {
+            border: 10px solid #B99095;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="600" height="600">
 
+    </canvas>
 
+    <script>
+        const canvas = document.querySelector("canvas");
+        const ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "#FCB5AC";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.lineWidth = 5;
+        ctx.strokeStyle = "#3D5B59";
+        ctx.moveTo(300, 100);
+        ctx.lineTo(300, 700);
+        ctx.stroke();
+    </script>
+</body>
+</html>
