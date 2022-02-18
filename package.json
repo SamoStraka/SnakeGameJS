@@ -1,6 +1,19 @@
 {
-  "name": "SnakeGameJS",
+  "name": "snakegamejs",
   "version": "1.0.0",
-  "dependencies": {
-  }
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamoStraka/SnakeGameJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamoStraka/SnakeGameJS/issues"
+  },
+  "homepage": "https://github.com/SamoStraka/SnakeGameJS#readme",
+  "description": ""
 }

@@ -14,6 +14,9 @@
 
         canvas {
             border: 10px solid #B99095;
+            position: relative;
+            top: 60px;
+
         }
     </style>
 </head>
@@ -23,17 +26,20 @@
     </canvas>
 
     <script>
+        //canvas
         const canvas = document.querySelector("canvas");
         const ctx = canvas.getContext("2d");
+
+        //player
+        const snakeSize = 50;
+        let snakePosX = 0;
+        let snakePosY = canvas.height / 2 - snakeSize / 2;
 
         ctx.fillStyle = "#FCB5AC";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        ctx.lineWidth = 5;
-        ctx.strokeStyle = "#3D5B59";
-        ctx.moveTo(300, 100);
-        ctx.lineTo(300, 700);
-        ctx.stroke();
+        ctx.fillStyle = "#3D5B59";
+        ctx.fillRect(0, canvas.height / 2 - snakeSize / 2, snakeSize, snakeSize);
     </script>
 </body>
 </html>
